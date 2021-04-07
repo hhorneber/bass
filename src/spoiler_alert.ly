@@ -39,7 +39,7 @@ introAndVerse = \chordmode {
   f |
   as |
   c |
-  c2. g4 \barbara
+  c2 g \barbara
 }
 
 interlude = \chordmode {
@@ -63,7 +63,7 @@ interlude = \chordmode {
   f |
   g |
   c |
-  c2. g4 
+  c2 g 
   \barbara
   
 }
