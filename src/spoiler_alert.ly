@@ -7,7 +7,7 @@
 
 \header {
   title = "Spoiler Alert"
-  subtitle = #(strftime "%Y-%m-%d" (localtime (current-time)))
+  subtitle = "Version 0.1"
   composer = "Henrik Horneber @ Wisecräcker"
    
   
@@ -80,14 +80,57 @@ chordsSong = {
 
   <<
     \scoreSettings
-    \new ChordNames \with {
-      \override BarLine.bar-extent = #'(-2 . 2)
-      \consists "Bar_engraver"
-     }
-     {      
-      \chordSettings
+    
+    \new ChordNames 
+     {        
       \chordsSong      
      }  
+     
+     \new Voice  {
+      \metronomeSettings
+      \tempo 4 = 208
+      
+      
+      \relative c' {
+         % intro + verse
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          % interlude
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+          \comp #4 |
+      }
+    }
+       
   >>
   \layout {}
   \midi {}
